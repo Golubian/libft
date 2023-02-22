@@ -6,7 +6,7 @@
 /*   By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:05:34 by gchalifo          #+#    #+#             */
-/*   Updated: 2023/02/22 04:24:29 by gchalifo         ###   ########.fr       */
+/*   Updated: 2023/02/22 04:35:26 by gchalifo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
+char	*ft_strchr(const char *s, int c);
 
 #endif
