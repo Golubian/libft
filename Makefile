@@ -6,7 +6,7 @@
 #    By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 18:43:35 by gchalifo          #+#    #+#              #
-#    Updated: 2023/02/22 05:12:10 by gchalifo         ###   ########.fr        #
+#    Updated: 2023/02/28 09:47:10 by gchalifo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,11 @@ SRC = ft_isalnum.c \
 		ft_strrchr.c \
 		ft_memchr.c \
 		ft_memcmp.c \
-
+		ft_strnstr.c \
+		ft_strdup.c \
+		ft_calloc.c \
+		ft_substr.c \
+		ft_strjoin.c \
 
 OBJ = $(SRC:.c=.o)
 
