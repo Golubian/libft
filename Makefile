@@ -6,7 +6,7 @@
 #    By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 18:43:35 by gchalifo          #+#    #+#              #
-#    Updated: 2023/02/28 09:47:10 by gchalifo         ###   ########.fr        #
+#    Updated: 2023/03/01 08:41:02 by gchalifo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,6 +36,10 @@ SRC = ft_isalnum.c \
 		ft_calloc.c \
 		ft_substr.c \
 		ft_strjoin.c \
+		ft_striteri.c \
+		ft_strmapi.c \
+		ft_memcpy.c \
+		ft_memmove.c \
 
 OBJ = $(SRC:.c=.o)
 
