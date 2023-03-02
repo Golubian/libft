@@ -6,7 +6,7 @@
 /*   By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 04:27:00 by gchalifo          #+#    #+#             */
-/*   Updated: 2023/02/28 09:51:08 by gchalifo         ###   ########.fr       */
+/*   Updated: 2023/03/02 11:05:06 by gchalifo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strrchr(const char *s, int c)
 	if (s[i] == (char) c)
 		j = i;
 	if (j != -1)
-		return (s + j);
+		return ((char *)s + j);
 	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/20 17:29:22 by gchalifo          #+#    #+#             */
-/*   Updated: 2023/02/20 18:41:02 by gchalifo         ###   ########.fr       */
+/*   Updated: 2023/03/02 11:05:29 by gchalifo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *b, int c, size_t len)
 {
 	char		*str;
-	int			i;
+	size_t		i;
 
 	str = (char *) b;
 	i = 0;

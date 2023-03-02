@@ -6,7 +6,7 @@
 /*   By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 11:48:58 by gchalifo          #+#    #+#             */
-/*   Updated: 2023/03/01 12:03:00 by gchalifo         ###   ########.fr       */
+/*   Updated: 2023/03/02 11:05:59 by gchalifo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1 || !set)
 		return (NULL);
-	sstart = s1;
-	send = s1 + ft_strlen(s1) - 1;
+	sstart = (char *)s1;
+	send = (char *)s1 + ft_strlen(s1) - 1;
 	while (char_in_set(sstart[0], set) == 1 && sstart[0] != 0)
 		sstart++;
 	while (char_in_set(send[0], set) == 1 && send[0] != 0)

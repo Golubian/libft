@@ -6,7 +6,7 @@
 /*   By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/01 08:13:44 by gchalifo          #+#    #+#             */
-/*   Updated: 2023/03/01 08:34:37 by gchalifo         ###   ########.fr       */
+/*   Updated: 2023/03/02 11:02:14 by gchalifo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	strdst = (char *) dst;
 	strsrc = (char *) src;
 	i = 0;
-	while (i < n)
+	while ((size_t) i < n)
 	{
 		strdst[i] = strsrc[i];
 		i++;
