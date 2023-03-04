@@ -6,16 +6,14 @@
 #    By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 18:43:35 by gchalifo          #+#    #+#              #
-#    Updated: 2023/03/01 13:07:15 by gchalifo         ###   ########.fr        #
+#    Updated: 2023/03/04 13:26:31 by gchalifo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-
-SRC = ft_isalnum.c \
+CFLAGS = -Wall -Werror -Wextra -I* #if it doesnt work, change # to .
+SRCS = ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
 		ft_isdigit.c \
@@ -48,32 +46,36 @@ SRC = ft_isalnum.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_itoa.c \
+		ft_split.c \
 
-OBJ = $(SRC:.c=.o)
+SRCS_BONUS =
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstsize.c \
+		ft_lstlast.c \
+		ft_lstadd_back.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c \
+		ft_lstmap.c \
 
-all: $(NAME)
+OBJS		= $(SRCS:.c=.o)
+OBJS_BONUS	= $(SRCS_BONUS:.c=.o)
 
-$(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
-	@echo "$(NAME) created"
-	@ranlib $(NAME)
-	@echo "$(NAME) indexed"
+$(NAME):		$(OBJS)
+				ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
-	@gcc $(FLAG) -c $< -o $@
+all:			$(NAME)
 
 clean:
-	@rm -f $(OBJ)
-	@echo "OBJ deleted"
+				-rm -f $(OBJS) $(OBJS_BONUS)
+				
+fclean:			clean
+				-rm -f $(NAME)
 
-fclean: clean
-	@rm -f $(NAME)
-	@echo "$(NAME) deleted"
+re:				fclean $(NAME)
 
-re: fclean all
+bonus:			$(OBJS) $(OBJS_BONUS)
+				ar rcs $(NAME) $(OBJS) $(OBJS_BONUS)
 
-.PHONY: all, clean, fclean, re
-
-#OBJ = $(SRC:.c=.o)
-#
-#all: $(NAME)
+.PHONY:			all clean fclean re bonus
