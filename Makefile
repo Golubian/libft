@@ -6,7 +6,7 @@
 #    By: gchalifo <gchalifo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/02/20 18:43:35 by gchalifo          #+#    #+#              #
-#    Updated: 2023/03/04 13:26:31 by gchalifo         ###   ########.fr        #
+#    Updated: 2023/03/04 13:28:54 by gchalifo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,8 +48,7 @@ SRCS = ft_isalnum.c \
 		ft_itoa.c \
 		ft_split.c \
 
-SRCS_BONUS =
-		ft_lstnew.c \
+SRCS_BONUS = ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
 		ft_lstlast.c \
